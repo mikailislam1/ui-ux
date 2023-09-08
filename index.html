@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+    <style>
+        *{
+            color: lightgreen !important;
+        }
+        .purple{
+            color: purple;
+        }
+        .blue{
+            color: blue;
+        }
+        #second{
+            color: gray;
+        }
+        h3{
+            color: red;
+            color: green;
+            color:lime !important;
+        }
+        h3{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h3>My Awesome Heading1</h3>
+    <h3 id="second" class="purple blue" style="color: aqua;">My Awesome Heading2</h3>
+    <h3>My Awesome Heading3</h3>
+    <h3 class="purple blue">My Awesome Heading4</h3>
+</body>
+</html>
